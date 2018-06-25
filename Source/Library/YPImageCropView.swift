@@ -96,7 +96,7 @@ final class YPImageCropView: UIScrollView, UIScrollViewDelegate {
     }
     
     func setFitImage(_ fit: Bool, animated isAnimated: Bool? = nil) {
-        let animated = isAnimated ?? !onlySquareImages
+        let animated = isAnimated ?? false
         refreshZoomScale()
         if fit {
             setZoomScale(squaredZoomScale, animated: animated)
